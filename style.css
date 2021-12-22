@@ -13,7 +13,7 @@ p {
 
 #the_app {
   background: #c5e4e7;
-  /* height: 100vh; */
+  height: 100vh;
   position: relative;
 
   display: flex;
@@ -23,11 +23,8 @@ p {
 }
 
 /* THE MAIN APP */
-
 #main {
   padding: 32px;
-  /* height: 400px;
-  width: 800px; */
   background: #fff;
   border-radius: 10px;
   display: flex;
@@ -36,7 +33,6 @@ p {
 }
 
 /* LEFT DIV SIDE */
-
 .left_div_side {
   width: 400px;
 }
@@ -49,7 +45,6 @@ p {
 }
 
 /* BILL DIV */
-
 input {
   background: #f3f8fb;
   height: 40px;
@@ -70,29 +65,14 @@ input {
   color: #f64b30;
 }
 
-/* .number_people_span
-{
-  margin-right: 50px;
-  float: right;
-  margin-left: 10px;
-  font-size: .8em;
-  font-weight: 600;
-  color: #f64b30;
-} */
-
 /* SELECT TIP DIV */
-
-/* .select_tip_btns_div { */
-/* display: flex; */
-/* width: 300px; */
-/* gap: 10px; */
-/* gap: 10px 80px; row-gap column gap */
-/* row-gap: 10px; */
-/* column-gap: 20px; */
-/* flex-wrap: wrap; */
-/* justify-content: space-between; */
-/* } */
-
+.select_tip_btns_div {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 40px 40px;
+  gap: 20px;
+  justify-items: center;
+  }
 .percent_btn {
   width: 80px;
   height: 40px;
@@ -114,10 +94,13 @@ input {
 }
 
 #custom_inpt {
+  margin-top: 8px;
   background: #f3f8fb;
   color: #597978;
   font-size: 1.1em;
-  text-align: center;
+  /* text-align: center; */
+  width: 60px;
+  height: 30px;
 }
 
 input {
@@ -164,8 +147,11 @@ input[type=number]::-webkit-outer-spin-button{
   color: #00474b;
 }
 
-/* RIGHT DIV SIDE */
+.num_people_div{
+  margin-top: 60px;
+}
 
+/* RIGHT DIV SIDE */
 .right_div_side {
   background: #00474b;
   width: 400px;
@@ -174,7 +160,6 @@ input[type=number]::-webkit-outer-spin-button{
 }
 
 /* TIP AMOUNT DIV */
-
 span {
   font-weight: 400;
   color: #f5ffff;
@@ -215,7 +200,6 @@ span {
 }
 
 /* RESET */
-
 .reset_btn_div {
   display: flex;
   justify-content: center;
