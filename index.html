@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="the_app">
+        <!-- SPLITTER DIV IMG -->
+        <div id="splitter_div_img"><img src="./images/logo.svg" alt=""></div>
+        <!-- THE APP TIP CALCULATE -->
+        <div id="main">
+            <!-- LEFT DIV SIDE -->
+            <div class="left_div_side">
+                <!-- BILL -->
+                <div class="bill_div div_div">
+                    <p>Bill <span class="number_span"></span></p>
+                    <input type="number" name="bill" id="bill_inpt" placeholder="0" value="">
+                    <img src="./images/icon-dollar.svg" alt="" class="img_icon">                </div>
+                <!-- SELECT TIP DIV -->
+                <div class="select_tip_div div_div">
+                    <p>Select Tip %</p>
+                    <div class="select_tip_btns_div">
+                        <button class="percent_btn" id="five">5%</button>
+                        <button class="percent_btn" id="ten">10%</button>
+                        <button class="percent_btn" id="fiveteen">15%</button>
+                        <button class="percent_btn" id="twentyfive">25%</button>
+                        <button class="percent_btn" id="fivetee">50%</button>
+                        <input type="number" name="custom" id="custom_inpt" placeholder="" value=""
+                         >
+                    </div>
+                </div>
+                <!-- NUMBER OF POEPLE DIV -->
+                <div class="num_people_div div_div">
+                    <p>Number of People <span class="number_people_span"></span></p>
+                    <input type="number" name="numpeople" id="number_of_people" placeholder="0" value="">
+                    <img src="./images/icon-person.svg" alt="" class="img_icon">
+                </div>
+            </div>
+            <!-- RIGHT DIV SIDE -->
+            <div class="right_div_side">
+                <!-- TIP AMOUNT DIV -->
+                <div class="tip_amount_div">
+                    <span class="tip_amount">Tip Amount</span>
+                    <span class="tip_amount_num">
+                        <span class="dollar tip_amount_num">$</span>
+                        <span class="tip_amount_costs tip_amount_num">0.00</span>
+                    </span>
+                    <br>
+                    <span class="person_span">/ person</span>
+
+
+                    <!-- <span class="tip_amount_num"><span class="dollar tip_amount_num">$</span> <span
+                            class="tip_amount_costs tip_amount_num">0.00</span> </span> -->
+                </div>
+                <!-- TOTAL DIV -->
+                <div class="total_div">
+                    <!-- <div class="per_person_div"> -->
+                    <span class="total">Total</span>
+                    <span class="tip_amount_num"><span class="dollar tip_amount_num">$</span><span
+                            class="total_amount_costs tip_amount_num">0.00</span> </span>
+                    <br>
+                    <span class="person_span">/ person</span>
+                    <!-- </div> -->
+                    <!-- <span class="tip_amount_num"><span class="dollar tip_amount_num">$</span><span
+                            class="total_amount_costs tip_amount_num">0.00</span> </span> -->
+                </div>
+                <div class="reset_btn_div">
+                    <button id="reset_btn" onclick="tipApp()"> RESET </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

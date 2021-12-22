@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+p {
+  color: #6b7d7d;
+  font-weight: 600;
+}
+
+#the_app {
+  background: #c5e4e7;
+  /* height: 100vh; */
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* THE MAIN APP */
+
+#main {
+  padding: 32px;
+  /* height: 400px;
+  width: 800px; */
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* LEFT DIV SIDE */
+
+.left_div_side {
+  width: 400px;
+}
+
+.div_div {
+  margin: 10px auto;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* BILL DIV */
+
+input {
+  background: #f3f8fb;
+  height: 40px;
+  width: 350px;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 5px;
+  /* padding-left: 100px; */
+}
+
+.number_span, .number_people_span
+{
+  margin-right: 50px;
+  float: right;
+  /* margin-left: 10px; */
+  font-size: .8em;
+  font-weight: 600;
+  color: #f64b30;
+}
+
+/* .number_people_span
+{
+  margin-right: 50px;
+  float: right;
+  margin-left: 10px;
+  font-size: .8em;
+  font-weight: 600;
+  color: #f64b30;
+} */
+
+/* SELECT TIP DIV */
+
+/* .select_tip_btns_div { */
+/* display: flex; */
+/* width: 300px; */
+/* gap: 10px; */
+/* gap: 10px 80px; row-gap column gap */
+/* row-gap: 10px; */
+/* column-gap: 20px; */
+/* flex-wrap: wrap; */
+/* justify-content: space-between; */
+/* } */
+
+.percent_btn {
+  width: 80px;
+  height: 40px;
+  margin: 10px;
+  background: #00474b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.percent_btn:hover
+{
+  cursor: pointer;
+  background: #9fe8df;
+  color: #00474b;
+}
+
+#custom_inpt {
+  background: #f3f8fb;
+  color: #597978;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #004a45;
+  font-style: 4.9em;
+  text-align: right;
+  outline: none;
+  padding-right: 20px;
+}
+
+input:hover
+{
+  border: 2px solid #5daaa2;
+  cursor: pointer;
+  color: #00474b;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  appearance: none;
+}
+
+.img_icon
+{
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.active_btn
+{
+  background: #26c2ad;
+  color: #00474b;
+}
+
+.active_btn:hover
+{
+  cursor: auto;
+  background: #26c2ad;
+  color: #00474b;
+}
+
+/* RIGHT DIV SIDE */
+
+.right_div_side {
+  background: #00474b;
+  width: 400px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+/* TIP AMOUNT DIV */
+
+span {
+  font-weight: 400;
+  color: #f5ffff;
+}
+
+.person_span {
+  display: block;
+  font-size: .9em;
+  margin: 3px 0 45px 0;
+  font-weight: 400;
+  color: #1fc1aa;
+}
+
+.tip_amount {
+  float: left;
+  align-self: flex-start;
+}
+
+.tip_amount_num {
+  float: right;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1fc1aa;
+}
+
+.total
+{
+  align-self: flex-start;
+  float: left;
+}
+
+.per_person_div {
+  float: left;
+}
+
+.total_amount_costs {
+  color: #1fc1aa;
+}
+
+/* RESET */
+
+.reset_btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+#reset_btn {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  background: #26c2ad;
+  width: 300px;
+  height: 45px;
+}
+
+#reset_btn:hover
+{
+  background: #9fe8df;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 375px) {
+
+#the_app {
+  background: #c5e4e7;
+  /* height: 100%;
+  width: 100%; */
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#splitter_div_img{
+  margin-top: 30px;
+}
+
+/* THE MAIN APP */
+#main {
+  padding: 10px;
+  height: 600px;
+  /* width: 80vh; */
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* LEFT DIV SIDE */
+
+.left_div_side {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div_div {
+  margin: 5px auto;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* BILL DIV */
+
+input {
+  background: #f3f8fb;
+  height: 30px;
+  width: 280px;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 5px;
+  /* padding-left: 100px; */
+}
+
+.number_span, .number_people_span
+{
+  margin-right: 50px;
+  float: right;
+  /* margin-left: 10px; */
+  font-size: .8em;
+  font-weight: 600;
+  color: #f64b30;
+}
+
+/* .number_people_span
+{
+  margin-right: 50px;
+  float: right;
+  margin-left: 10px;
+  font-size: .8em;
+  font-weight: 600;
+  color: #f64b30;
+} */
+
+/* SELECT TIP DIV */
+
+.select_tip_btns_div {
+display: grid;
+grid-template-columns: 120px 120px;
+grid-template-rows: 40px 40px 40px;
+gap: 15px;
+justify-items: center;
+}
+
+.percent_btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #004a45;
+  font-style: 4.9em;
+  text-align: right;
+  outline: none;
+  padding-right: 20px;
+}
+
+input:hover
+{
+  border: 2px solid #5daaa2;
+  cursor: pointer;
+  color: #00474b;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  appearance: none;
+}
+
+.img_icon
+{
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
+.active_btn
+{
+  background: #26c2ad;
+  color: #00474b;
+}
+
+.active_btn:hover
+{
+  cursor: auto;
+  background: #26c2ad;
+  color: #00474b;
+}
+
+#custom_inpt{
+  width: 80px;
+  height: 40px;
+}
+
+/* RIGHT DIV SIDE */
+
+.right_div_side {
+  background: #00474b;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* TIP AMOUNT DIV */
+
+span {
+  font-weight: 400;
+  color: #f5ffff;
+}
+
+.person_span {
+  display: block;
+  font-size: .9em;
+  margin: 3px 0 15px 0;
+  font-weight: 400;
+  color: #1fc1aa;
+}
+
+.tip_amount {
+  float: left;
+  align-self: flex-start;
+}
+
+.tip_amount_num {
+  float: right;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1fc1aa;
+}
+
+.total
+{
+  align-self: flex-start;
+  float: left;
+}
+
+.per_person_div {
+  float: left;
+}
+
+.total_amount_costs {
+  color: #1fc1aa;
+}
+
+/* RESET */
+
+.reset_btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+#reset_btn {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  background: #26c2ad;
+  width: 300px;
+  height: 45px;
+}
+
+#reset_btn:hover
+{
+  background: #9fe8df;
+  cursor: pointer;
+}
+
+}
